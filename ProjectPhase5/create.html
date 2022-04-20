@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "./style.css">
+        <script src=  "./script.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <img id="logo" src="./logo.png" alt="longhorn" onClick="redirect()">
+            <b id="heading" >Login/Sign up</b>
+        </div>
+        <div class = "create">
+            <h1>Create Account</h1>
+            <form id = "create">
+                <table>
+                    <tr>
+                        <td><label>Username:</label></td><td><input name = "username" id = "username"  type = "text" size = "30" /> </td>
+                    </tr>
+                    <tr>
+                        
+                        <td> <label>Password:  </label></td><td><input name = "password" id = "password" type = "text" size = "30" /> </td>
+                    </tr>
+                    <tr>
+                        <td> <label>Repeat Password:</label></td> <td><input name = "password2" id = "password2" type = "text" size = "30" /> </td>
+                    </tr>
+                    <tr><td><td>
+                        <input type = "button" id = "submit" value = "Submit" />
+                        <input type = "reset" value = "Reset" />
+                    </td>
+                    </tr>
+                </table>
+                
+            </form>
+            <p>
+                <a href = "./login.php">Already have an account? Click here to log in</a>
+            </p>
+        </div>
+    </body>
+</html>

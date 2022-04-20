@@ -1,0 +1,305 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    top: 0vh;
+    left: 0vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.header{
+    top: 0vh;
+    left: 0vw;
+    position: fixed;
+    width: 100vw;
+    height: 6.5vh;
+    color: white;
+    background-color: rgb(174, 33, 255);
+    z-index: 4;
+    filter: drop-shadow(0px 2px 5px #333f48);
+}
+
+#header2{
+    top: -14vh;
+}
+
+#video{
+    top: 85vh;
+}
+
+#logo{
+    margin: 1vh;
+    height:6vh;
+    float: left;
+    filter: drop-shadow(0px 1px 4px #333f48);
+    cursor: pointer;
+}
+
+#logo:hover{
+    filter: drop-shadow(0px 0px 4px rgb(174, 33, 255));
+}
+
+#heading{
+    font-family: 'Metrophobic', sans-serif;
+    top: .5vh;
+    left: 15vw;
+    position: relative;
+    font-size: 4vh;
+    letter-spacing: .2vw;
+}
+
+#rightbar{
+    float: right;
+    color: white;
+}
+#rightbar>a{
+    bottom: 40px;
+    font-size: 6px;
+}
+
+
+.header a{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1vh;
+    top: .5vh;
+    position: relative;
+    display: inline block;
+    color: white;
+    font-size: 2vh;
+}
+
+#profimg{
+    height: 4vh;
+    margin: 2vh;
+}
+
+.main{
+    top: 9vh;
+    left: 10px;
+    position:relative;
+}
+
+.maincrypto{
+    top: 8vh;
+    position:relative;
+}
+
+p.indent{
+    text-indent: 30px;
+}
+
+.top{
+    text-align: center;
+    font-size: 2vh;
+    width: 60vw;
+    left: 20vw;
+    position: relative;
+}
+
+.top a{
+    text-decoration: none;
+    color:rgb(174, 33, 255);
+}
+
+.top a:hover{
+    text-decoration:underline;
+}
+
+#navleft{
+    float: left;
+    color:rgb(174, 33, 255);
+}
+
+#navmiddle{
+    width: 10vw;
+    left: auto;
+    right: auto;
+    color: rgb(174, 33, 255);
+}
+
+#navright{
+    float: right;
+    color:rgb(174, 33, 255);
+}
+
+.main h1{
+    margin-top: 6vh;
+    position: absolute;
+    font-size: 5vh;
+    color: #333f48;
+}
+
+
+
+#image{
+    width: 100vw;
+    text-align: center;
+    z-index: 2;
+    display: block;
+    position:absolute;
+}
+
+#image img{
+    height: 65vh;
+    transform: translateY(-2.5vh);
+}
+
+#cap{
+    position: absolute;
+    z-index: 3;
+    top: 51vh;
+    background-color: white;
+    filter: drop-shadow(10px 10px 0px rgb(174, 33, 255));
+    text-align: center;
+}
+
+#caption{
+    margin: 1vw;
+}
+
+h2{
+    font-size: 4vh;
+    position: relative;
+}
+
+h3{
+    top: 10vh;
+    font-size: 3vh;
+    position: absolute;
+}
+
+.h3info{
+    top: 14vh;
+    font-size: 3vh;
+    position: absolute;
+}
+
+h3 span{
+    color: rgb(174, 33, 255);
+}
+
+iframe {
+    width: 1000px;
+    height: 500px;
+    border: none;
+}
+
+#about{
+    top: 40vh;
+    position: absolute;
+    width: 100vw; 
+}
+
+#about p{
+    top: 15vh;
+    position: absolute;
+}
+
+
+#links{
+    top: 98vh;
+    width: 100vw;
+    height: 28vh;
+    position: absolute;
+}
+button{
+    top: 15vh;
+    position: relative;
+    margin: 2vh;
+    height: 6vh;
+    width: 10vw;
+    font-size: 1.75vh;
+    background: white;
+    color: rgb(174, 33, 255);
+    border: 2px solid rgb(174, 33, 255);
+    border-radius: 6px;
+}
+
+button:hover{
+    filter: drop-shadow(0px 1px 4px #333f48);
+}
+
+footer{
+    position: absolute;
+    top: 215vh;
+    background: rgb(174, 33, 255);
+    width: 100vw;
+    transform: translateX(-8px);
+    height: 6vh;
+}
+
+#footinfo{
+    position: absolute;
+    top: 0.5vh;
+    left: 5vw;
+}
+
+#footinfo a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.75vh;
+    margin-left: 2vw;
+}
+
+#footinfo a:hover{
+    text-decoration: underline;
+}
+
+#footinfo p{
+    display: inline-block;
+    position: absolute;
+    width: 1vw;
+    top: -1.5vh;
+    margin-left: 38vw;
+    font-size: 1.5vh;
+    color: white;
+}
+
+#botlogo{
+    height: 6vh;
+    position: absolute;
+    left: 90vw;
+    top: -0.5vh;
+    filter: drop-shadow(0px 1px 4px #333f48);
+    cursor: pointer;
+}
+
+#botlogo:hover{
+    filter: drop-shadow(0px 0px 4px rgb(174, 33, 255));
+}
+
+h4{
+    font-size: 3vh;
+    top: 20vh;
+}
+
+.login{
+    position: absolute;
+    top: 40px;
+}
+
+.create{
+    position: absolute;
+    top: 40px;
+}
+.mainMeta{
+    position: absolute;
+    top: 10px;
+    font-size: 26px;
+    padding: 20px;
+    color: #333f48;
+}
+.maincrypto{
+    position: absolute;
+    top: 10px;
+    font-size: 26px;
+    padding: 20px;
+    color: #333f48;
+}
+.mainNFT{
+    position: absolute;
+    top: 10px;
+    font-size: 26px;
+    padding: 20px;
+    color: #333f48;
+}
+
