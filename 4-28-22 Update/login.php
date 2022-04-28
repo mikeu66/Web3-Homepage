@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label>Username: <input name = "username1" id = "username1" type = "text" /></label>
                 </p>
                 <p>
-                    <label>Password: <input name = "password1" id = "password1" type = "text" /></label>
+                    <label>Password: <input name = "password1" id = "password1" type = "password" /></label>
                 </p>
                 <p>
                     <input type = "submit" id = "submit" value = "Submit" />

@@ -6,9 +6,11 @@ function log_out(){
 }
 
 if(isset($_POST['logout'])) {
-    echo "eeeee";
     log_out();
 }
+//if(isset($_POST['delete'])) {
+//    echo "<script> alert('Account Deleted') </script>";
+//}
 ?>
 
 
@@ -28,6 +30,7 @@ if(isset($_POST['logout'])) {
             <form method = "post" action = "./login.php">
                 <h1>Profile    </h1>
                 <button type="submit" value = "logout" class = "logout" name = "logout"> Log out </button>
+                <button type="button" value = "delete" class = "delete" name = "delete"> Delete Account </button>
             </form>
         </div>
     </body>
