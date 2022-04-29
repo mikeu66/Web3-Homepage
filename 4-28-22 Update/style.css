@@ -267,6 +267,12 @@ footer{
     filter: drop-shadow(0px 0px 4px rgb(174, 33, 255));
 }
 
+#metavid{
+    top: 73vh;
+    position: absolute;
+    width: 100vw;
+}
+
 h4{
     font-size: 3vh;
     top: 20vh;
@@ -302,8 +308,4 @@ h4{
     padding: 20px;
     color: #333f48;
 }
-#createTable tr td {
-    text-align: center;
-}
-
 
