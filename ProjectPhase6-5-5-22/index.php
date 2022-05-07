@@ -70,8 +70,6 @@ font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px
             <div id="footinfo">
                 <a href="contact.php">Contact Us</a>
                 <a href="about.html">About Us</a>
-                <a href="nextPage.html">Privacy Policy</a>
-                <a href="nextPage.html">Terms of Use</a>
                 <p>Copyright &copy; 2022 Deep Dive: Web3 & Metaverse</p>
                 <img id="botlogo" src="./logo.png" alt="coin" onClick="redirect()">
             </div>
