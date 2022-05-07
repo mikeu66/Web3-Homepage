@@ -1,5 +1,8 @@
 <?php
-
+$server = "spring-2022.cs.utexas.edu";
+$user   = "cs329e_bulko_mikeu66";
+$pwd    = "Yeah\$Nobel!Plot";
+$dbName = "cs329e_bulko_mikeu66"; 
     session_start();
     function log_out(){
         setcookie('username', '', 1);
@@ -13,11 +16,6 @@
         
     }
     if(isset($_POST['delete'])) {
-        $server = "spring-2022.cs.utexas.edu";
-        $user   = "cs329e_bulko_mikeu66";
-        $pwd    = "Yeah\$Nobel!Plot";
-        $dbName = "cs329e_bulko_mikeu66"; 
-        
         $mysqli = new mysqli ($server,$user,$pwd,$dbName);
 
         $username = $_COOKIE['username'];
@@ -32,10 +30,31 @@
         }
         
     }
-    //if(isset($_POST['delete'])) {
-    //    echo "<script> alert('Account Deleted') </script>";
-    //}
 ?>
+<script language = "javascript" type = "text/javascript">
+
+function ajaxFunction(server,userID,pwd,dbName) {
+	var ajaxReq;
+	
+	ajaxReq = new XMLHttpRequest();
+	
+	ajaxReq.onreadystatechange = function() {
+		if (ajaxReq.readyState == 4) {
+			var ajaxDisp = document.getElementById('ajaxDiv');
+			ajaxDisp.innerHTML = ajaxReq.responseText;
+		}
+	}
+	
+	var username = $_COOKIE['username'];
+	var queryString = "?username=" + username;
+
+	queryString += "&server=" + server + "&user=" + userID + "&pwd=" + pwd + "&dbName=" + dbName;
+	
+	ajaxReq.open("GET", "changeuser.php" + queryString, true);
+	ajaxReq.send(null);
+	
+}
+</script>
 
 
 <!DOCTYPE html>
@@ -56,7 +75,7 @@
             <table id = "profileTable">
                 <tr>
                     <td><button type="submit" value = "logout" class = "logout" name = "logout"> Log out </button></td>
-                    <td><button type="submit" value = "delete" class = "delete" name = "delete"> Delete Account </button></td>
+                    <td><button type="submit" value = "delete" class = "delete" name = "delete" onclick = "ajaxFunction($server, $userID, $pwd, $dbName)"> Delete Account </button></td>
                 </tr>
             </table>
         </form>
