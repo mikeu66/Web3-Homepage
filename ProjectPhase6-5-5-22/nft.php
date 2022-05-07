@@ -47,6 +47,7 @@ if(isset($_COOKIE['username'])){
             This is because each token would have a digital passport of sorts, which would list information such as its owner, creator, any contracts associated with it etc. 
             This enables things like smart contracts, which can be used to program royalties and such. This in turn allows artists to automatically revieve a percentage of a sale pertaining to their work directly in their wallets. 
         </p>
+	<iframe style = "display:block; margin-left:auto; margin-right:auto" "width="914" height="514" src="https://www.youtube.com/embed/NNQLJcJEzv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     </body>
